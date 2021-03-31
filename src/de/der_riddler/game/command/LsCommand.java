@@ -3,7 +3,6 @@ package de.der_riddler.game.command;
 import de.der_riddler.game.File;
 import de.der_riddler.game.Game;
 import de.der_riddler.game.InOut;
-import org.jetbrains.annotations.Contract;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -29,7 +28,6 @@ public class LsCommand extends Command {
         username = game::getUsername;
     }
 
-    @Contract(pure = true)
     private Function<File, String> makeFormatOutput(int length) {
         return file -> String.format(
                 "-r--r--r-- 1 %s %s %" + length + "d %s %s",
