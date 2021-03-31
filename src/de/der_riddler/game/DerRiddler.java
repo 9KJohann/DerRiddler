@@ -93,7 +93,7 @@ public class DerRiddler implements EscapeRoom {
 
     @Override
     public long getTimeLimit() {
-        return 15 * 1 * 1000;
+        return 15 * 60 * 1000;
     }
 
     @Override

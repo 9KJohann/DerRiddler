@@ -103,7 +103,7 @@ public class Game implements Runnable {
             for (Supplier<String> supplier : intro) {
                 String line = supplier.get();
                 inOut.println(line);
-                Thread.sleep(line.length() * 1);
+                Thread.sleep(line.length() * 35);
             }
         } catch (InterruptedException ex) {
 
